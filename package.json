@@ -1,0 +1,29 @@
+{
+  "name": "find-dir-stream",
+  "version": "1.0.0",
+  "description": "Directory walker like UNIX find(1) for node.js",
+  "main": "find-dir-stream.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "test/simple-test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sudheerapte/find-dir-stream.git"
+  },
+  "keywords": [
+    "find",
+    "directory",
+    "folder",
+    "recursive",
+    "files"
+  ],
+  "author": "Sudheer Apte",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sudheerapte/find-dir-stream/issues"
+  },
+  "homepage": "https://github.com/sudheerapte/find-dir-stream#readme"
+}
