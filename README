@@ -1,0 +1,26 @@
+@module(find-dir-stream)
+Directory walker like UNIX find(1), for node.js
+
+Lets you find all the files and directories under a given root,
+to perform arbitrary operations.
+
+Returns to you a readable stream in object mode, which sends one
+object per directory found. The first object is for the root dir.
+Subsequent objects are for children, grandchildren, etc., in
+breadth-first order.
+
+Each object has two members:
+    dir: a string containing the path of a directory
+    path: an array containing filenames in that directory
+
+You create a readable stream by passing in the root directory to
+the "createObjectStream" function. Then you can read from this stream
+in the usual way, for example by handling the "data" event.
+
+Usage:
+
+var ostr = require('find-dir-stream').createObjectStream("/some/path");
+
+ostr.on('data', (obj) => { ...use obj.dir and obj.files array... });
+
+
