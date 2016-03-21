@@ -11,7 +11,7 @@ breadth-first order.
 
 Each object has two members:
     dir: a string containing the path of a directory
-    path: an array containing filenames in that directory
+    files: an array containing filenames in that directory
 
 You create a readable stream by passing in the root directory to
 the "createObjectStream" function. Then you can read from this stream
