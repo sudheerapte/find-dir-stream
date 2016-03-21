@@ -1,6 +1,6 @@
 {
   "name": "find-dir-stream",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Directory walker like UNIX find(1) for node.js",
   "main": "find-dir-stream.js",
   "directories": {
